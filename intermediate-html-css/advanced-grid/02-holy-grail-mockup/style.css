@@ -18,12 +18,29 @@
 .header {
   background-color: #393f4d;
   display: grid;
-  grid-template-columns: 2fr repeat(5, 1fr);
+  grid-template-columns: 2fr 4fr;
+}
+
+.logo {
+  display: grid;
+  place-items: center start;
+}
+
+.menu {
+  display: grid;
+  align-items: center;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style-type: none;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
 }
 
 .sidebar {
