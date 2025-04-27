@@ -5,6 +5,9 @@
 
 .container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
 }
 
 .container div {
@@ -16,6 +19,7 @@
 }
 
 .header {
+  grid-column: 1 / -1;
   background-color: #393f4d;
   display: grid;
   grid-template-columns: 2fr 4fr;
@@ -101,6 +105,7 @@
 }
 
 .footer {
+  grid-column: 1 / -1;
   background-color: #393f4d;
 }
 
